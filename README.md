@@ -107,9 +107,14 @@ AI significantly improved my productivity while allowing me to focus on learning
 best practices such as TDD, clean architecture, and proper Git usage.
 ---
 📌 Notes
-
+---
 Authentication is implemented using JWT.
 
 Inventory logic ensures stock validation.
 
 The project follows clean coding practices and modular structure.
+---
+
+## 👨‍💻 Author
+**SHAIK HARRISS RAZVI**  
+🔗 [LinkedIn](https://www.linkedin.com/in/hariss-razvi-shaik-31b037333/) | [GitHub](https://github.com/Hariss22H)
