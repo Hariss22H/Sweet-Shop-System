@@ -1,39 +1,37 @@
 # 🍬 Sweet Shop Management System
 
-A full-stack Sweet Shop Management System built using **FastAPI** and **React**.  
-This application allows users to register, log in, view available sweets, purchase items, and manage inventory through secure REST APIs.
+A full-stack Sweet Shop Management System built using FastAPI and React.
+The application allows users to register, log in, view sweets, purchase items,
+and manage inventory with admin controls.
 
 ---
 
 ## 🚀 Features
 
 ### Backend (FastAPI)
-- User registration and login with **JWT authentication**
-- Secure password hashing using **bcrypt**
-- Sweet CRUD operations (Create, Read, Update, Delete)
+- User registration and login (JWT authentication)
+- Password hashing using bcrypt
+- Sweet CRUD operations
 - Search sweets by name and category
 - Inventory management:
-  - Purchase sweets (automatically decreases stock)
-  - Prevents purchase when stock is zero
-  - Restock sweets (admin-controlled logic)
-- Persistent storage using **SQLite**
-- Interactive API documentation using **Swagger UI**
-- **Test-Driven Development (TDD)** followed for authentication module
-
----
+  - Purchase sweets (stock decreases)
+  - Restock sweets (admin only)
+- SQLite database (persistent storage)
+- Swagger API documentation
+- Test-Driven Development (TDD) for authentication
 
 ### Frontend (React + Vite)
-- User registration and login interface
-- Sweet dashboard displaying live inventory
-- Purchase button disabled when stock is unavailable
-- API integration using **Axios**
-- Simple, clean, and responsive user interface
+- User registration and login UI
+- Sweet dashboard with live inventory
+- Purchase button disabled when stock is zero
+- Axios-based API integration
+- Simple, clean, responsive UI
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
+**Backend**
 - Python
 - FastAPI
 - SQLAlchemy
@@ -41,7 +39,7 @@ This application allows users to register, log in, view available sweets, purcha
 - JWT (python-jose)
 - pytest
 
-### Frontend
+**Frontend**
 - React
 - Vite
 - Axios
@@ -58,49 +56,60 @@ python -m venv venv
 source venv/Scripts/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
 
-Backend runs at:
+## Backend runs at:
+
 http://127.0.0.1:8000
 
-Swagger UI:
+---
+
+### Swagger UI:
+
 http://127.0.0.1:8000/docs
 
 Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 Frontend runs at:
-http://localhost:5173
 
+http://localhost:5173
+---
 🧪 Running Tests
+```bash
+
 cd backend
 pytest
+```
 
 🤖 My AI Usage
+---
 
 I used AI tools (ChatGPT) responsibly throughout this project for:
 
-Understanding project requirements and scope
+Understanding project requirements
 
-Designing REST API structure and data models
+Designing API endpoint structure
 
-Generating initial boilerplate code
+Writing initial boilerplate code
 
-Debugging issues (bcrypt compatibility, CORS configuration)
+Debugging issues (bcrypt compatibility, CORS errors)
 
 Improving code readability and structure
 
-All AI-generated suggestions were reviewed, modified, and fully understood before implementation.
-AI significantly improved my productivity while allowing me to focus on learning best practices such as Test-Driven Development (TDD), clean architecture, and proper Git workflows.
-
+All AI-assisted code was reviewed, modified, and fully understood by me.
+AI significantly improved my productivity while allowing me to focus on learning
+best practices such as TDD, clean architecture, and proper Git usage.
+---
 📌 Notes
 
-Authentication is implemented using JWT
+Authentication is implemented using JWT.
 
-Inventory logic ensures stock validation and consistency
+Inventory logic ensures stock validation.
 
-Virtual environments, dependencies, and database files are excluded using .gitignore
-
-The project follows clean coding principles and modular structure
+The project follows clean coding practices and modular structure.
